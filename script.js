@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react"
 // Load saved data on page load
 $(document).ready(function () {
     const savedData = JSON.parse(localStorage.getItem('resumeData'));
