@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Signup Form -->
+    <div class="container mx-auto py-10">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-center">Signup</h2>
+            <form id="signupForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Full Name:</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email:</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Your email">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700">Phone:</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Your phone">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700">Password:</label>
+                    <input type="password" id="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Your password">
+                </div>
+                <button type="button" class="bg-blue-500 text-white px-6 py-2 rounded-lg" onclick="signup()">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="container mx-auto py-10">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+            <form id="loginForm">
+                <div class="mb-4">
+                    <label for="loginEmail" class="block text-gray-700">Email:</label>
+                    <input type="email" id="loginEmail" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Your email">
+                </div>
+                <div class="mb-4">
+                    <label for="loginPassword" class="block text-gray-700">Password:</label>
+                    <input type="password" id="loginPassword" class="w-full px-4 py-2 border border-gray-300 rounded-lg" placeholder="Your password">
+                </div>
+                <button type="button" class="bg-green-500 text-white px-6 py-2 rounded-lg" onclick="login()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
